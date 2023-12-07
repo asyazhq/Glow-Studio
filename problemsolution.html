@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glow Studio</title>
+    <!--Bootsrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous">
+        </script>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="https://kit.fontawesome.com/1dd4092fe7.js" crossorigin="anonymous"></script>
+
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Noto+Serif&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+
+    <!--Jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <i class="fa-solid fa-circle-chevron-up scrolltop__icon"
+            style="color: rgb(227, 152, 255); font-size: 40px;"></i>
+    </button>
+
+    <section id="header">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="index.html"><img src="assets/icon.png" width="120" height="120"></a>
+
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle dropbtn" onclick="dropdown()" type="button"
+                        data-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link" href="morning.html">Morning Routine</a>
+                        <a class="nav-link " href="night.html">Night Routine</a>
+                        <a class="nav-link" href="#header">Problems and Solutions</a>
+                        <a class="nav-link" href="#footer">Contact us</a>
+                    </div>
+                </div>
+            </nav>
+            <div class="main-text">
+                <h2 class="note">Glow Studio</h2><br>
+                <p>Here you will find appropriate skincare routine for your skin type!</p><br>
+                <a href="#videoSect" class="btn btn-outline-danger btn-lg" role="button" aria-pressed="true">Learn more
+                    -></a>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="videoSect">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="text">
+                        <h2>Are you struggling with skin issues and yearning for a flawless complexion?</h2><br>
+                        <h3>Look no further - we can help you achieve the clear skin you desire!</h3>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-flex align-items-center justify-content-center">
+                    <div class="video-wrapper">
+                        <video id="video1">
+                            <source src="assets/skin transformation.mp4">
+                        </video>
+                    </div>
+                    <form name="form" id="form" action="#" method="get">
+                        <input type="button" value="Play/Pause" onclick="play();" />
+                        <input type="button" value="Stop" onclick="stop();" />
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="advices">
+        <div class="textbox">
+            <h3>Discover the perfect solution to your problem with just a few clicks</h3>
+        </div>
+        <div id="myBtnContainer">
+            <button class="btnFilter active" onclick="filterSelection('all')"> Show all</button>
+            <button class="btnFilter" onclick="filterSelection('acne')"> Acne</button>
+            <button class="btnFilter" onclick="filterSelection('pigmentation')"> Pigmentation</button>
+            <button class="btnFilter" onclick="filterSelection('blackheads')"> Blackheads</button>
+            <button class="btnFilter" onclick="filterSelection('enlargedpores')"> Enlarged pores</button>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="column col-lg-4 acne">
+                    <div class="content">
+                        <img src="images/acne.jpg">
+                    </div>
+                </div>
+                <div class="column col-lg-4 acne">
+                    <div class="content">
+                        <h3>Acne</h3> <br>
+                        <p>If you're treating your acne but still seeing breakouts, it can be frustrating. Acne has many
+                            causes, and treatment looks different for everyone. Fortunately, there are some self-care
+                            steps you can take at home to help manage your acne during treatment.</p>
+                    </div>
+                </div>
+
+                <div class="column col-lg-4 acne">
+                    <div class="content">
+                        <h3>Products that will help you: </h3>
+                        <ul>
+                            <li><strong>Salicylic Acid (BHA)</strong> <br> It helps by unclogging pores and controlling
+                                oil, and is ideal for people with oily skin and comedonal—AKA non-inflammatory—acne</li>
+                            <li><strong>Tea Tree Oil</strong> <br> If you prefer natural ingredients to treat acne, tea
+                                tree oil is a top contender. It's a powerful antibacterial and anti-inflammatory
+                                ingredient that can help minimize breakouts and keep skin clear.</li>
+                            <li><strong>Adapalene</strong> <br> Adapalene is a gentle, well tolerated and effective
+                                derivative of a retinoid that treats acne. It's a go-to for acne patients who are
+                                intolerant to tretinoin and other prescription strength retinoids.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="column col-lg-4 pigmentation">
+                    <div class="content">
+                        <img src="images/pigmentation.jpg">
+                    </div>
+                </div>
+                <div class="column col-lg-4 pigmentation">
+                    <div class="content">
+                        <h3>Pigmentation</h3> <br>
+                        <p>When it comes to achieving the glowing, even complexion that dreams are made of, nothing is
+                            more of a buzzkill than unwanted dark spots, whether it's a singular dark spot or all-over
+                            patches of discoloration.</p>
+                    </div>
+                </div>
+                <div class="column col-lg-4 pigmentation">
+                    <div class="content">
+                        <h3>Products that will help you: </h3>
+                        <ul>
+                            <li><strong>Vitamin C</strong> <br> Vitamin C blocks tyrosinase, an enzyme your body uses to
+                                produce melanin, making it a natural skin brightener. </li>
+                            <li><strong>Glycolic acid</strong> <br> Glycolic acid works to eliminate the buildup of dead
+                                skin cells while also brightening the skin and improving the appearance of discoloration
+                            </li>
+                            <li><strong>Niacinamide</strong> <br> Niacinamide, a form of vitamin B3, not only reduces
+                                inflammation and redness associated with acne and rosacea, but also helps tackle
+                                discoloration</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="column col-lg-4 blackheads">
+                    <div class="content">
+                        <img src="images/blackheads.jpg">
+                    </div>
+                </div>
+                <div class="column col-lg-4 blackheads">
+                    <div class="content">
+                        <h3>Blackheads</h3> <br>
+                        <p>Blackheads look like itty-bitty dark bumps on the surface of the skin. They appear when sebum
+                            gets trapped with dead skin at the surface of your pores</p>
+                    </div>
+                </div>
+                <div class="column col-lg-4 blackheads">
+                    <div class="content">
+                        <h3>Products that will help you: </h3>
+                        <ul>
+                            <li><strong>Salicylic acid</strong> <br> This beta hydroxy acid helps remove excess oil and
+                                exfoliate the cells from the surface of the skin.</li>
+                            <li><strong>Benzoyl Peroxide</strong> <br>Benzoyl peroxide works as a keratolytic agent,
+                                which means it's able to break down and loosen the dead skin cells on the surface of the
+                                skin and down in the pores.</li>
+                            <li><strong>Clay mask</strong> <br> Clay masks help to draw oils and toxins out of the skin,
+                                which helps to unclog pores</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="column col-lg-4 enlargedpores">
+                    <div class="content">
+                        <img src="images/pores.jpg">
+                    </div>
+                </div>
+                <div class="column col-lg-4 enlargedpores">
+                    <div class="content">
+                        <h3>Enlarged pores</h3> <br>
+                        <p>When skin produces too much oil, it mixes with dead skin in the pore and forms a clog that
+                            causes the pore to expand.</p>
+                    </div>
+                </div>
+                <div class="column col-lg-4 enlargedpores">
+                    <div class="content">
+                        <h3>Products that will help you: </h3>
+                        <ul>
+                            <li><strong>Azelaic Acid</strong> <br> A multitasker, azelaic acid assists in clearing out
+                                sebum and dead skin cells that could be enlarging your pores' appearance.</li>
+                            <li><strong>Retinol</strong> <br>Retinol, a form of vitamin A, helps make pores appear
+                                smaller by encouraging your skin to produce new cells, shed old ones, and thicken the
+                                outer layer.</li>
+                            <li><strong>Beta-Hydroxy Acids (BHAs)</strong> <br> BHAs, prominently salicylic acid, are
+                                saviors for those struggling with excess sebum and dead skin cells. </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <br><br><br>
+                    <h3 class="text-uppercase"> Contacts</h3>
+                    <p><i class="fa-solid fa-house"></i> Astana IT University</p>
+                    <p><i class="fa-solid fa-envelope"></i> 220537@astanait.edu.kz</p>
+                    <p><i class="fa-solid fa-phone"></i> 87054962685</p>
+                </div>
+                <div class="col-lg-6">
+                    <br><br><br>
+                    <h3 class="text-uppercase">Sign up to our community</h3>
+                    <div class="form-outline form-white mb-4">
+                        <input type="email" class="form-control" id="email" onkeypress="typing()" />
+                        <label class="form-label">Email address</label>
+                    </div>
+                    <button id="soundcheck" type="submit" class="btn btn-outline-white btn-block">Subscribe</button>
+                </div>
+            </div>
+        </div>
+        <p class="text-center">Copyright @2023 | Designed by Zhakanova Asem</p>
+        </div>
+    </section>
+
+
+    <script src="index.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.getElementById('soundcheck').addEventListener('click', function () {
+                var audio = new Audio('assets/sound.mp3');
+                audio.onended = function () {
+                    alert('Thank you for subscribing to our website! I hope you had a great time exploring it!');
+                };
+                audio.play();
+            });
+        });
+
+
+        $(document).ready(function () {
+            $('#header').hide().fadeIn(1000);
+        });
+    </script>
+</body>
+
+</html>

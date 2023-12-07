@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glow Studio</title>
+    <!--Bootsrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous">
+        </script>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="https://kit.fontawesome.com/1dd4092fe7.js" crossorigin="anonymous"></script>
+
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Noto+Serif&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+
+    <!--Jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <i class="fa-solid fa-circle-chevron-up scrolltop__icon"
+            style="color: rgb(227, 152, 255); font-size: 40px;"></i>
+    </button>
+
+    <section id="header">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#header"><img src="assets/icon.png" width="120" height="120"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#title">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="morning.html">Morning Routine</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="night.html">Night Routine</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="problemsolution.html">Problems and Solutions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#footer">Contact us</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="main-text">
+                <h2 class="note">Glow Studio</h2><br>
+                <p>Here you will find appropriate skincare routine for your skin type!</p><br>
+                <a href="#aboutUs" class="btn btn-outline-danger btn-lg" role="button" aria-pressed="true">Learn more
+                    -></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="aboutUs">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="images/aboutUs img.jpg">
+                </div>
+                <div class="col-lg-6">
+                    <h2>About Us</h2> <br>
+                    <p><strong>Glow Studio</strong> is a website designed to help individuals achieve their best skin
+                        yet. With a focus
+                        on skincare routines and products, Glow Studio offers a wealth of information and resources to
+                        help users understand their skin type and concerns. Whether you're dealing with acne,
+                        blackheads, or other skin issues, Glow Studio can guide you towards the right products to
+                        address your specific needs. With its user-friendly interface and expert advice, Glow Studio is
+                        the perfect destination for anyone looking to improve their skin's health and appearance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="benefits">
+        <div class="container">
+            <br>
+            <h2 class="text-center">Why should you choose us?</h2>
+            <br>
+            <br>
+            <div class="card-deck">
+                <div class="card text-center">
+                    <div class="card-header">
+                        <i class="fa-solid fa-people-group"></i>
+
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Personalized skincare recommendations</h3>
+                        <p class="card-text">Glow Studio provides personalized skincare recommendations based on your
+                            skin type and concerns. This
+                            ensures that you are using the right products for your skin, which can lead to better
+                            results.</p>
+                    </div>
+                </div>
+                <div class="card text-center">
+                    <div class="card-header">
+
+                        <i class="fa-solid fa-brain"></i>
+
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Expert advice</h3>
+                        <p class="card-text">Glow Studio is staffed by skincare experts who can answer any questions you
+                            may have about your skin
+                            or skincare routine. This can help you make more informed decisions about your skincare
+                            products and
+                            routine.</p>
+                    </div>
+                </div>
+                <div class="card text-center">
+                    <div class="card-header">
+
+                        <i class="fa-solid fa-magnifying-glass"></i>
+
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Product reviews</h3>
+                        <p class="card-text">Glow Studio features product reviews from real users, which can help you
+                            determine whether a product
+                            is right for you before you buy it.</p>
+                    </div>
+                </div>
+                <div class="card text-center">
+                    <div class="card-header">
+
+                        <i class="fa-solid fa-face-smile-beam"></i>
+
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Convenience</h3>
+                        <p class="card-text">Glow Studio is an online resource, which means you can access it from
+                            anywhere at any time. This
+                            makes it easy to research products and build your skincare routine on your own schedule.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="categories">
+        <div class="container">
+            <div class="text-center">
+                <h2>What we have in Glam Studio?</h2>
+            </div>
+            <div class="links">
+                <div class="l1">
+                    <a href="morning.html">
+                        <i class="fa-regular fa-sun"></i>
+                        <h3>Perfect Morning Routine</h3>
+                    </a>
+                </div>
+                <div class="l2">
+                    <a href="night.html">
+                        <i class="fa-regular fa-moon"></i>
+                        <h3>Perfect Night Routine</h3>
+                    </a>
+                </div>
+                <div class="l3">
+                    <a href="problemsolution.html">
+                        <i class="fa-regular fa-circle-question"></i>
+                        <h3>Ways to Deal with Skin Problems</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <br><br><br>
+                    <h3 class="text-uppercase"> Contacts</h3>
+                    <p><i class="fa-solid fa-house"></i> Astana IT University</p>
+                    <p><i class="fa-solid fa-envelope"></i> 220537@astanait.edu.kz</p>
+                    <p><i class="fa-solid fa-phone"></i> 87054962685</p>
+                </div>
+                <div class="col-lg-6">
+                    <br><br><br>
+                    <h3 class="text-uppercase">Sign up to our community</h3>
+                    <div class="form-outline form-white mb-4">
+                        <input type="email" class="form-control" id="email" onkeypress="typing()" />
+                        <label class="form-label">Email address</label>
+                    </div>
+                    <button id="soundcheck" type="submit" class="btn btn-outline-white btn-block">Subscribe</button>
+                </div>
+            </div>
+        </div>
+        <p class="text-center">Copyright @2023 | Designed by Zhakanova Asem</p>
+        </div>
+    </section>
+
+    <script src="index.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.getElementById('soundcheck').addEventListener('click', function () {
+                var audio = new Audio('assets/sound.mp3');
+                audio.onended = function () {
+                    alert('Thank you for subscribing to our website! I hope you had a great time exploring it!');
+                };
+                audio.play();
+            });
+        });
+
+
+        const text = document.querySelector(".note");
+        const strText = text.textContent;
+        const splitText = strText.split("");
+        text.textContent = "";
+        for (let i = 0; i < splitText.length; i++) {
+            text.innerHTML += "<span>" + splitText[i] + "</span>";
+        }
+
+        const spans = text.querySelectorAll('span');
+        let char = 0;
+        let timer = setInterval(onTick, 50);
+
+        function onTick() {
+            spans[char].classList.add('fade');
+            char++;
+            if (char === splitText.length) {
+                complete();
+                return;
+            }
+        }
+        function complete() {
+            clearInterval(timer);
+            timer = null;
+            for (let i = 0; i < spans.length; i++) {
+                spans[i].classList.remove('fade');
+                spans[i].style.opacity = 1;
+            }
+        }
+    </script>
+</body>
+
+</html>

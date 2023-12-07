@@ -1,0 +1,392 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-family: 'Dela Gothic One', cursive;
+
+}
+
+h3 {
+    font-family: 'Libre Baskerville', serif;
+}
+
+p {
+    font-family: 'Noto Serif', serif;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+#myBtn:hover {
+    background-color: #555;
+}
+
+#header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(75, 76, 77, 0.219), rgba(4, 9, 30, 0.7)), url(images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.nav-link {
+    color: rgba(3, 3, 3, 0.801) !important;
+    margin-left: 30px;
+    cursor: pointer;
+    animation: button-shimmer 2s infinite;
+    transition: all 0.3s ease-in-out;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.nav-link:hover {
+    animation: button-particles 1s ease-in-out infinite;
+    transform: translateY(-2px);
+    color: rgb(255, 56, 49) !important;
+}
+
+.main-text {
+    width: 90%;
+    columns: #fff;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: 185px;
+}
+
+.main-text h2 {
+    font-size: 75px;
+    font-weight: bolder;
+    color: #ffffff;
+    letter-spacing: 5px;
+}
+
+.main-text p {
+    font-size: medium;
+    margin: 10px 0 40px;
+    color: #ffffff;
+}
+
+#aboutUs {
+    background-color: rgb(255, 240, 209);
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.row {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 5px 20px;
+}
+
+#aboutUs h2 {
+    font-size: 60px;
+}
+
+#aboutUs img {
+    padding: 15px;
+    width: 400px;
+    height: 500px;
+}
+
+#benefits {
+    width: 100%;
+}
+
+#benefits h2 {
+    font-size: 60px;
+    margin: 15px auto;
+}
+
+#benefits .row {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    padding-left: 40px;
+}
+
+.card-deck {
+    padding: 0px 25px;
+}
+
+#benefits .card-header {
+    background-color: rgb(214, 164, 255);
+}
+
+.card-header i {
+    font-size: 35px;
+}
+
+#benefits .card-body {
+    height: max-content;
+    background-color: rgb(241, 223, 255);
+}
+
+#categories {
+    display: grid;
+    grid-gap: 20px;
+    padding: 30px;
+}
+
+#categories a {
+    border: 3px solid #fff;
+    border-radius: 100%;
+    box-shadow: 0 0 40px 2px rgb(255, 170, 121);
+    display: grid;
+    justify-items: center;
+    padding: 65px 0px;
+    animation-name: bounce;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    transition: all 0.5s ease;
+    cursor: alias;
+}
+
+.links {
+    display: flex;
+    padding: 20px;
+}
+
+#categories i {
+    font-size: 30px;
+    color: black;
+}
+
+#categories h3 {
+    text-align: center;
+    color: black;
+}
+
+.l1,
+.l2,
+.l3 {
+    padding: 0px 20px;
+}
+
+.box h3 {
+    text-align: center;
+    padding: 50px 0px 0px 0px;
+    font-size: 40px;
+}
+
+.bestproducts {
+    display: flex;
+    max-width: 1200px;
+    position: relative;
+}
+
+.list1,
+.list2,
+.list3 {
+    display: none;
+}
+
+.product1,
+.product2,
+.product3 {
+    display: none;
+}
+
+.list1 img,
+.product1 img {
+    height: 450px;
+    padding: 0px 50px;
+}
+
+.list2 img,
+.product2 img {
+    height: 300px;
+    padding: 0px 100px;
+}
+
+.list3 img,
+.product3 img {
+    height: 500px;
+    padding: 50px;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover,
+.next:hover {
+    background-color: #585757;
+    color: rgb(255, 255, 255);
+}
+
+#advices .column {
+    display: none;
+}
+
+#advices .show {
+    display: block;
+}
+
+#myBtnContainer {
+    padding: 0px 35px 35px;
+}
+
+.btnFilter {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.btnFilter:hover {
+    background-color: #dddddd;
+}
+
+.btnFilter.active {
+    background-color: rgb(252, 233, 129);
+    color: rgb(0, 0, 0);
+}
+
+#advices {
+    background-color: rgba(255, 242, 228, 0.718);
+    padding: 25px;
+}
+
+#advices img {
+    width: 300px;
+    height: 400px;
+}
+
+#advices .container {
+    display: flex;
+    align-items: flex-start;
+}
+
+#videoSect {
+    background-color: #ffdcb8b7;
+    padding: 25px;
+}
+
+.video-wrapper {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+#video1 {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+}
+
+#form input {
+    background-color: rgb(249, 252, 225);
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+#form input:hover {
+    background-color: rgb(255, 224, 46);
+}
+
+
+.dropbtn {
+    background-color: #fddd97;
+    color: rgb(0, 0, 0);
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover {
+    background-color: rgb(199, 198, 198);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.show {
+    display: block;
+}
+
+.show {
+    display: block;
+}
+
+.textbox h3 {
+    padding: 50px;
+    text-align: center;
+}
+
+#goal-slider {
+    width: 100%;
+    height: 100vh;
+}
+
+span {
+    transition: all 1s ease;
+}
+
+span.fade {
+    color: rgb(174, 0, 255);
+}
